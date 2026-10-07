@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíz - Plantas y accesorios para tu hogar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 21c0-6 4-9 8-10-1 6-4 10-8 10Z"></path>
+            <path d="M12 21c0-7-4-11-9-12 1 7 4 12 9 12Z"></path>
+          </svg>
+        </span>
+        Raíz
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Buscar</a></li>
+          <li><a href="carrito.html" class="cart-link">Carrito <span class="cart-badge" id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Plantas y accesorios</p>
+          <h1>Lleva un poco de naturaleza a cada rincón de tu casa</h1>
+          <p>En Raíz seleccionamos plantas de interior, macetas y herramientas de cuidado para que armar tu propio jardín urbano sea sencillo, incluso si nunca lo has hecho antes.</p>
+          <div class="hero-actions">
+            <a href="catalogo.html" class="btn btn-accent">Ver catálogo</a>
+            <a href="nosotros.html" class="btn btn-outline">Conoce al equipo</a>
+          </div>
+        </div>
+        <div class="hero-figure">
+          <img src="https://picsum.photos/seed/raiz-hero/800/600" alt="Sala de estar decorada con plantas de interior" width="800" height="600">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Categorías destacadas</h2>
+          <p>Un punto de partida para encontrar justo lo que tu espacio necesita.</p>
+        </div>
+
+        <ul class="category-list">
+          <li class="category-card">
+            <img src="https://picsum.photos/seed/plantas-interior/400/300" alt="Plantas de interior" width="400" height="300">
+            <div class="category-card-body">
+              <h3>Plantas de interior</h3>
+              <p>Variedades resistentes, ideales para espacios con poca luz natural.</p>
+            </div>
+          </li>
+          <li class="category-card">
+            <img src="https://picsum.photos/seed/suculentas/400/300" alt="Suculentas y cactus" width="400" height="300">
+            <div class="category-card-body">
+              <h3>Suculentas y cactus</h3>
+              <p>Bajo mantenimiento y mucho carácter para escritorios y repisas.</p>
+            </div>
+          </li>
+          <li class="category-card">
+            <img src="https://picsum.photos/seed/macetas/400/300" alt="Macetas y cerámica" width="400" height="300">
+            <div class="category-card-body">
+              <h3>Macetas y cerámica</h3>
+              <p>Piezas hechas a mano que le dan un acabado propio a cada planta.</p>
+            </div>
+          </li>
+          <li class="category-card">
+            <img src="https://picsum.photos/seed/accesorios/400/300" alt="Accesorios de cuidado" width="400" height="300">
+            <div class="category-card-body">
+              <h3>Accesorios de cuidado</h3>
+              <p>Regaderas, tijeras de poda y fertilizantes para el día a día.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Raíz</p>
+      <p class="footer-text">Proyecto escolar de comercio electrónico. Plantas y accesorios para espacios con vida.</p>
+      <p class="footer-copy">© 2026 Raíz. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

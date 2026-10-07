@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíz - Quiénes somos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 21c0-6 4-9 8-10-1 6-4 10-8 10Z"></path>
+            <path d="M12 21c0-7-4-11-9-12 1 7 4 12 9 12Z"></path>
+          </svg>
+        </span>
+        Raíz
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Buscar</a></li>
+          <li><a href="carrito.html" class="cart-link">Carrito <span class="cart-badge" id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Quiénes somos</h1>
+          <p>Un equipo de estudiantes construyendo Raíz como proyecto de clase.</p>
+        </div>
+
+        <div class="team-table-wrap">
+          <table class="team-table">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Correo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ana Torres</td>
+                <td>Diseño UX/UI</td>
+                <td>ana.torres@raiz.edu</td>
+              </tr>
+              <tr>
+                <td>Luis Hernández</td>
+                <td>Desarrollo Frontend</td>
+                <td>luis.hernandez@raiz.edu</td>
+              </tr>
+              <tr>
+                <td>Carla Méndez</td>
+                <td>Desarrollo Backend</td>
+                <td>carla.mendez@raiz.edu</td>
+              </tr>
+              <tr>
+                <td>Diego Ramírez</td>
+                <td>Gestión de Producto</td>
+                <td>diego.ramirez@raiz.edu</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <button type="button" class="btn btn-outline" id="toggle-info">Ver más</button>
+
+        <div class="team-extra" id="team-extra" hidden>
+          <div class="team-extra-card">
+            <h4>Ana Torres</h4>
+            <p>Encargada de la identidad visual y de que cada página se sienta parte de un mismo sistema.</p>
+          </div>
+          <div class="team-extra-card">
+            <h4>Luis Hernández</h4>
+            <p>Construyó la maquetación de las seis páginas y la lógica de interacción en JavaScript.</p>
+          </div>
+          <div class="team-extra-card">
+            <h4>Carla Méndez</h4>
+            <p>Definió la estructura de datos de productos y usuarios que alimentará la futura tienda.</p>
+          </div>
+          <div class="team-extra-card">
+            <h4>Diego Ramírez</h4>
+            <p>Coordinó los tiempos de entrega y revisó que el proyecto cumpliera con los requisitos del curso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Raíz</p>
+      <p class="footer-text">Proyecto escolar de comercio electrónico. Plantas y accesorios para espacios con vida.</p>
+      <p class="footer-copy">© 2026 Raíz. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

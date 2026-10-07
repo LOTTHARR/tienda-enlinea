@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíz - Buscar productos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 21c0-6 4-9 8-10-1 6-4 10-8 10Z"></path>
+            <path d="M12 21c0-7-4-11-9-12 1 7 4 12 9 12Z"></path>
+          </svg>
+        </span>
+        Raíz
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Buscar</a></li>
+          <li><a href="carrito.html" class="cart-link">Carrito <span class="cart-badge" id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Buscar productos</h1>
+          <p>Escribe el nombre de una planta o accesorio para encontrarlo más rápido.</p>
+        </div>
+
+        <form class="search-form" id="form-busqueda">
+          <label for="busqueda-input" class="visually-hidden">Buscar productos</label>
+          <input type="search" id="busqueda-input" name="busqueda" placeholder="Por ejemplo: pothos, maceta, regadera...">
+          <button type="submit" class="btn btn-accent">Buscar</button>
+        </form>
+
+        <div class="search-results" id="resultados-busqueda">
+          <p class="search-placeholder">Escribe un término y presiona buscar para ver resultados.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Productos destacados</h2>
+          <p>Algunas de las piezas favoritas de nuestra comunidad.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="https://picsum.photos/seed/pothos/400/300" alt="Pothos Dorado" width="400" height="300">
+            <div class="product-card-body">
+              <h3>Pothos Dorado</h3>
+              <p>Trepadora de bajo mantenimiento, perfecta para colgar o en repisas.</p>
+              <p class="product-price">$180.00</p>
+              <button type="button" class="btn btn-accent add-to-cart" data-product="Pothos Dorado">Agregar al carrito</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://picsum.photos/seed/echeveria/400/300" alt="Suculenta Echeveria" width="400" height="300">
+            <div class="product-card-body">
+              <h3>Suculenta Echeveria</h3>
+              <p>Rosetas compactas que necesitan poca agua y mucha luz indirecta.</p>
+              <p class="product-price">$95.00</p>
+              <button type="button" class="btn btn-accent add-to-cart" data-product="Suculenta Echeveria">Agregar al carrito</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://picsum.photos/seed/regadera/400/300" alt="Regadera de cobre" width="400" height="300">
+            <div class="product-card-body">
+              <h3>Regadera de Cobre</h3>
+              <p>Cuello largo para llegar a macetas colgantes sin derramar agua.</p>
+              <p class="product-price">$310.00</p>
+              <button type="button" class="btn btn-accent add-to-cart" data-product="Regadera de Cobre">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Raíz</p>
+      <p class="footer-text">Proyecto escolar de comercio electrónico. Plantas y accesorios para espacios con vida.</p>
+      <p class="footer-copy">© 2026 Raíz. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
